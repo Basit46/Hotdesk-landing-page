@@ -11,6 +11,9 @@ module.exports = {
         unbounded: ["Unbounded", "cursive"],
         "open-sauce-one": ["Open Sauce One", "sans-serif"],
       },
+      backgroundImage: {
+        partnersbg: "linear-gradient(180deg, #222, #000)",
+      },
     },
   },
   plugins: [],
