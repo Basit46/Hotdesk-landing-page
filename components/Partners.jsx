@@ -5,7 +5,18 @@ const Partners = () => {
   return (
     <section className="w-full h-screen bg-partnersbg text-white flex flex-col justify-center gap-[96px]">
       <h1 className="font-[500] font-unbounded text-[48px] text-center">
-        JOIN OVER 200 COMPANIES
+        JOIN{" "}
+        <span className="relative">
+          <Image
+            className="absolute left-[-2px] bottom-[-20px]"
+            src="/lineicon.svg"
+            width="288"
+            height="20"
+            alt="icon"
+          />
+          <span className="relative">OVER 200</span>
+        </span>{" "}
+        COMPANIES
       </h1>
       <div className="flex items-center justify-around">
         <Image src="/partner1.svg" width="198" height="39" alt="partner logo" />

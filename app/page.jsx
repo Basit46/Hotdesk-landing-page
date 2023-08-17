@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Partners from "@/components/Partners";
 import Plans from "@/components/Plans";
+import Reviews from "@/components/Reviews";
 import Services from "@/components/Services";
 
 export default function Home() {
@@ -51,6 +52,7 @@ export default function Home() {
       <Services />
       <Plans />
       <Partners />
+      <Reviews />
     </main>
   );
 }
