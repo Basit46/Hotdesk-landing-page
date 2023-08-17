@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import FeatureSectionTwo from "@/components/FeatureSection2";
 import FeatureSectionOne from "@/components/FeatureSectionOne";
 import Hero from "@/components/Hero";
@@ -53,6 +54,7 @@ export default function Home() {
       <Plans />
       <Partners />
       <Reviews />
+      <Contact />
     </main>
   );
 }

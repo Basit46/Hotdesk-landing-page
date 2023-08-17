@@ -30,9 +30,9 @@ const Reviews = () => {
   ];
 
   return (
-    <section className="w-full md:h-[855.77px]">
+    <section className="w-full md:h-[855.77px] flex justify-center items-center">
       <div className="w-full overflow-x-hidden">
-        <div className="w-fit flex justify-center">
+        <div className="mx-auto w-fit flex justify-center">
           {reviewsList.map((review) => (
             <div
               key={review.id}

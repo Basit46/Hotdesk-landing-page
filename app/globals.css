@@ -24,6 +24,13 @@
   .services .text-box p {
     @apply font-[600] font-open-sauce-one text-[36px];
   }
+  form label {
+    @apply block font-unbounded text-[12px] uppercase font-bold tracking-[0.12px] mb-[18px];
+  }
+  form input,
+  form textarea {
+    @apply w-full px-[24px] py-[8px] h-[68px]  focus:outline-[0.50px] focus:outline-black;
+  }
 }
 
 .slide {
