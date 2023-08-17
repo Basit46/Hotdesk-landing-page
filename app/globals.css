@@ -1,0 +1,52 @@
+@import url("https://fonts.cdnfonts.com/css/open-sauce-one");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;500;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  nav a {
+    @apply text-black font-[600] text-[16px] font-open-sauce-one hover:opacity-50 duration-200;
+  }
+  .hero-text span {
+    @apply border-black border-[4px] bg-white font-unbounded text-[84px] font-[500] tracking-[-1.68px] leading-[84px] p-[12px];
+  }
+  .slide ul li {
+    @apply text-[48px] uppercase font-[500] w-fit whitespace-nowrap;
+  }
+  .services span {
+    @apply border-[3px] border-black rounded-[200px] overflow-hidden;
+  }
+  .services .text-box {
+    @apply bg-white text-black py-[9px] pl-[18px] pr-[48px] flex gap-[12px];
+  }
+  .services .text-box p {
+    @apply font-[600] font-open-sauce-one text-[36px];
+  }
+}
+
+.slide {
+  animation: slideLeft 35s infinite linear;
+}
+@keyframes slideLeft {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.slide-cont > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    #000,
+    transparent 10%,
+    transparent 90%,
+    #000
+  );
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
