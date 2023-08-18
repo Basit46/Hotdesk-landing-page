@@ -2,6 +2,7 @@ import Contact from "@/components/Contact";
 import CustomButton from "@/components/CustomButton";
 import FeatureSectionTwo from "@/components/FeatureSection2";
 import FeatureSectionOne from "@/components/FeatureSectionOne";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Partners from "@/components/Partners";
@@ -77,6 +78,7 @@ export default function Home() {
           <CustomButton text="GET IN TOUCH" reverse />
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
