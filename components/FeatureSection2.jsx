@@ -1,12 +1,35 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import CustomButton from "./CustomButton";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useRef, useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const FeatureSectionTwo = () => {
+  const imgsContRef = useRef([]);
+  const section2Ref = useRef();
+  useEffect(() => {
+    gsap.from(imgsContRef.current, {
+      scale: 0.6,
+      duration: 0.5,
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: section2Ref.current,
+        start: "top 30%",
+      },
+    });
+  }, []);
   return (
-    <section className="h-[880px] w-full flex">
+    <section ref={section2Ref} className="h-[880px] w-full flex">
       <div className="relative w-[50%] h-full overflow-hidden flex bg-black">
-        <div className="absolute left-[-30%] top-[50%] translate-y-[-50%] w-[511px] h-[322.38px] border-[4px] border-white overflow-hidden">
+        <div
+          ref={(e) => imgsContRef.current.push(e)}
+          className="absolute left-[-30%] top-[50%] translate-y-[-50%] w-[511px] h-[322.38px] border-[4px] border-white overflow-hidden"
+        >
           <Image
             src="/featuresImg2.jpg"
             fill
@@ -14,7 +37,10 @@ const FeatureSectionTwo = () => {
             alt="Workspace Img"
           />
         </div>
-        <div className="absolute right-[-30%] top-[50%] translate-y-[-50%] w-[511px] h-[511px] rounded-full border-[4px] border-white overflow-hidden">
+        <div
+          ref={(e) => imgsContRef.current.push(e)}
+          className="absolute right-[-30%] top-[50%] translate-y-[-50%] w-[511px] h-[511px] rounded-full border-[4px] border-white overflow-hidden"
+        >
           <Image
             src="/featuresImg3.jpg"
             fill

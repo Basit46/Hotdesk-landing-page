@@ -1,9 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import CustomButton from "./CustomButton";
+import gsap from "gsap";
+import { useRef, useEffect } from "react";
 
 const Hero = () => {
+  const heroTexts = useRef([]);
+  useEffect(() => {
+    gsap.from(heroTexts.current, {
+      scale: 0.6,
+      duration: 0.5,
+      stagger: 0.05,
+    });
+  }, []);
   return (
     <section className="relative w-full h-screen md:h-[980px] font-open-sauce-one">
       {/* Hero Background: Gradients + Image */}
@@ -21,10 +32,12 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full px-[27px] flex flex-col justify-center gap-[48px]">
         <div className="hero-text flex flex-col gap-[12px]">
           <div className="flex gap-[12px]">
-            <span>SPACE FOR</span> <span>YOUR</span>
+            <span ref={(e) => heroTexts.current.push(e)}>SPACE FOR</span>{" "}
+            <span ref={(e) => heroTexts.current.push(e)}>YOUR</span>
           </div>
           <div className="flex gap-[12px]">
-            <span>NEXT</span> <span>BIG MOVE.</span>
+            <span ref={(e) => heroTexts.current.push(e)}>NEXT</span>{" "}
+            <span ref={(e) => heroTexts.current.push(e)}>BIG MOVE.</span>
           </div>
         </div>
         <p className="text-[36px]">

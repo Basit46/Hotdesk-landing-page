@@ -1,6 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useRef, useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Plans = () => {
   const plansList = [
@@ -20,8 +26,24 @@ const Plans = () => {
     },
   ];
 
+  const plansRef = useRef();
+  const plansBoxes = useRef([]);
+
+  useEffect(() => {
+    gsap.from(plansBoxes.current, {
+      scale: 0.7,
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: plansRef.current,
+        start: "top 30%",
+      },
+    });
+  }, []);
   return (
-    <div className="w-full md:h-[961.97px] bg-black text-white flex flex-col justify-center gap-[120px]">
+    <div
+      ref={plansRef}
+      className="w-full md:h-[961.97px] bg-black text-white flex flex-col justify-center gap-[120px]"
+    >
       <h1 className="font-[500] font-unbounded text-[60px] text-center px-[101px] leading-[66px]">
         ON-DEMAND OPTIONS FOR TEAMS OF{" "}
         <span className="relative">
@@ -39,6 +61,7 @@ const Plans = () => {
       <div className="flex justify-around">
         {plansList.map((plan) => (
           <div
+            ref={(e) => plansBoxes.current.push(e)}
             key={plan.id}
             className="w-[608px] h-[417.969px] border-white border-[2px] flex flex-col"
           >
