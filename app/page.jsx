@@ -58,20 +58,20 @@ export default function Home() {
       <Partners />
       <Reviews />
       <Contact />
-      <section className="w-full md:h-[816.36px] bg-bg2 text-white flex items-center justify-around ">
+      <section className="w-full min-h-[816.36px] py-[50px] xl:py-0 bg-bg2 text-white flex flex-col xl:flex-row items-center justify-around ">
         <div className="relative w-fit h-fit">
-          <div className="relative w-[511px] h-[322.36px] border-white border-[4px]">
+          <div className="relative w-[90vw] md:w-[511px] h-[300px] md:h-[322.36px] border-white border-[4px]">
             <Image src="/line3-img2.jpg" fill alt="img" className="" />
           </div>
           <div className="absolute right-[80px] bottom-[-200px] w-[278px] h-[278px] rounded-full border-white border-[4px] overflow-hidden">
             <Image src="/girlimg.jpg" fill alt="img" className="object-cover" />
           </div>
         </div>
-        <div className="w-[40%] h-full flex flex-col justify-center gap-[48px]">
-          <p className="font-unbounded text-[21px] font-bold">
+        <div className="mt-[250px] xl:mt-[30px] w-full xl:w-[40%] h-full flex flex-col items-center xl:items-start justify-center gap-[48px]">
+          <p className="font-unbounded text-[18px] xmd:text-[21px] font-bold text-center xl:text-start">
             CUSTOMIZE HOTDESK
           </p>
-          <h1 className="font-unbounded text-[48px] font-[500] leading-[52.8px]">
+          <h1 className="font-unbounded text-[28px] xmd:text-[36px] xl:text-[48px] font-[500] leading-[52.8px] text-center xl:text-start">
             LET’S DISCUSS YOUR TEAM’S REQUIREMENTS.
           </h1>
 

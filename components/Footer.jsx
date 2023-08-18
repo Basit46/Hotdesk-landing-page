@@ -26,7 +26,7 @@ const Footer = () => {
 
   return (
     <footer ref={footer} className="bg-black text-white px-[24px]">
-      <div className="py-[100px] border-b-[1px] border-opacity-[0.25] border-white flex items-start px-[30px] gap-[200px]">
+      <div className="py-[100px] border-b-[1px] border-opacity-[0.25] border-white flex flex-col xl:flex-row items-start px-[30px] gap-[50px] xl:gap-[200px]">
         <Image src="/logo-white.svg" width="212" height="29" alt="logo" />
         <div className="flex flex-col gap-[12px]">
           <div className="flex gap-[12px]">
@@ -44,13 +44,13 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="links-wrapper pt-[100px] pb-[50px] flex gap-[250px]">
+      <div className="links-wrapper pt-[100px] pb-[50px] flex flex-wrap gap-[60px] md:gap-[50px] xmd:gap-[250px]">
         <div className="flex flex-col gap-[48px]">
           <h3>CONTACT</h3>
-          <p className="font-open-sauce-one text-[21px] leading-[29.4px]">
+          <p className="font-open-sauce-one text-[18px] xmd:text-[21px] leading-[29.4px]">
             1091 York Street <br /> Prahran <br /> Victoria, 3141
           </p>
-          <p className="font-open-sauce-one text-[21px]">
+          <p className="font-open-sauce-one text-[18px] xmd:text-[21px]">
             <Link
               href="mailTo:contact@hotdesk.io"
               className="underline font-[600]"

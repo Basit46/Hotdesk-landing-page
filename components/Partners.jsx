@@ -27,13 +27,13 @@ const Partners = () => {
   return (
     <section
       ref={partnersRef}
-      className="w-full h-screen bg-partnersbg text-white flex flex-col justify-center gap-[96px]"
+      className="w-full min-h-screen bg-partnersbg text-white flex flex-col justify-center gap-[96px]"
     >
-      <h1 className="font-[500] font-unbounded text-[48px] text-center">
+      <h1 className="font-[500] font-unbounded text-[28px] xmd:text-[36px] xl:text-[48px] text-center">
         JOIN{" "}
         <span className="relative">
           <Image
-            className="absolute left-[-2px] bottom-[-20px]"
+            className="absolute left-[-30px] xmd:left-[-2px] bottom-[-60px] xmd:bottom-[-20px]"
             src="/lineicon.svg"
             width="288"
             height="20"
@@ -43,7 +43,7 @@ const Partners = () => {
         </span>{" "}
         COMPANIES
       </h1>
-      <div className="flex items-center justify-around">
+      <div className="flex flex-wrap gap-[10px] xl:gap-0 items-center justify-around">
         <Image
           ref={(e) => logosRef.current.push(e)}
           src="/partner1.svg"
@@ -80,7 +80,7 @@ const Partners = () => {
           alt="partner logo"
         />
       </div>
-      <h2 className="font-open-sauce-one text-[36px] text-center">
+      <h2 className="font-open-sauce-one text-[21px] xmd:text-[28px] xl:text-[36px] text-center">
         They choose Hotdesk to get their best work done.
       </h2>
     </section>

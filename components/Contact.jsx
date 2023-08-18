@@ -5,17 +5,17 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="services w-full md:h-[1337.38px] relative overflow-hidden bg-[#f5f5f5] grid place-items-center">
+    <section className="services w-full min-h-[1337.38px] py-[50px] xmd:py-0 relative overflow-hidden bg-[#f5f5f5] grid place-items-center">
       {/* Background Gradients */}
       <div className="absolute top-0 left-0 h-[683px] w-[683px] bg-[#c7f092] rounded-[1200px] blur-[149.995px] translate-x-[-40%] translate-y-[-40%]" />
       <div className="absolute bottom-0 right-0 h-[683px] w-[683px] bg-[#9492f0] rounded-[1200px] blur-[149.995px] translate-x-[25%] translate-y-[50%]" />{" "}
       {/* Content */}
-      <div className="relative w-[70%]">
+      <div className="relative w-[90%] xmd:w-[70%]">
         <div className="mx-auto relative w-fit">
-          <h1 className="mb-[40px] font-unbounded text-[48px] font-[500] text-center">
+          <h1 className="mb-[40px] font-unbounded text-[28px] xmd:text-[36px] xl:text-[48px] font-[500] text-center">
             HOW CAN HOTDESK WORK <br /> FOR YOUR TEAM?
           </h1>
-          <h2 className="font-open-sauce-one text-[36px] text-center">
+          <h2 className="font-open-sauce-one text-[21px] xmd:text-[28px] xl:text-[36px] text-center">
             Hit the form and we’ll be in touch to discuss.
           </h2>
           <Image
@@ -31,12 +31,12 @@ const Contact = () => {
           onSubmit={(e) => e.preventDefault()}
           className="mx-auto mt-[70px] w-full flex flex-col gap-[48px] items-center"
         >
-          <div className="w-full flex justify-between">
-            <div className="w-[40%]">
+          <div className="w-full flex flex-col xmd:flex-row gap-[48px] xmd:gap-0 justify-between">
+            <div className="w-full xmd:w-[40%]">
               <label htmlFor="name">Your Name</label>
               <input type="text" id="name" />
             </div>
-            <div className="w-[40%]">
+            <div className="w-full xmd:w-[40%]">
               <label htmlFor="email">Email Address</label>
               <input type="email" id="email" />
             </div>
