@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link href="/">News</Link>
           <Link href="/">Contact</Link>
         </nav>
-        <div className="hidden xmd:block">
+        <div className="hidden xl:block">
           <CustomButton text="BOOK A TOUR" />
         </div>
         <FaBars
