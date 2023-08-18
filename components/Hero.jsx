@@ -16,7 +16,7 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className="relative w-full h-screen md:h-[980px] font-open-sauce-one">
+    <section className="relative w-full h-[471.14px] vsm:h-screen md:h-[980px] font-open-sauce-one">
       {/* Hero Background: Gradients + Image */}
       <div className="w-full h-full flex">
         <div className="relative w-full xl:w-[50%] h-full overflow-hidden">
@@ -29,22 +29,22 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="absolute top-0 left-0 w-full h-full px-[27px] flex flex-col items-center xl:items-start justify-center gap-[48px]">
-        <div className="w-fit hero-text flex flex-col items-center xl:items-start gap-[12px]">
-          <div className="w-fit flex gap-[12px] justify-center">
+      <div className="absolute top-0 left-0 w-full h-full px-[27px] flex flex-col items-center xl:items-start justify-center gap-[36px] vsm:gap-[48px]">
+        <div className="w-fit hero-text flex flex-col items-center xl:items-start gap-[6px] vsm:gap-[12px]">
+          <div className="w-fit flex gap-[6px] vsm:gap-[12px] justify-center">
             <span ref={(e) => heroTexts.current.push(e)}>SPACE FOR</span>{" "}
             <span ref={(e) => heroTexts.current.push(e)}>YOUR</span>
           </div>
-          <div className="w-fit flex gap-[12px]">
+          <div className="w-fit flex gap-[6px] vsm:gap-[12px]">
             <span ref={(e) => heroTexts.current.push(e)}>NEXT</span>{" "}
             <span ref={(e) => heroTexts.current.push(e)}>BIG MOVE.</span>
           </div>
         </div>
-        <p className="text-[21px] xmd:text-[36px] text-center">
+        <p className="text-[18px] vsm:text-[21px] xmd:text-[36px] text-center">
           Creative Co-Working Spaces <br /> in the heart of Melbourne.
         </p>
         <CustomButton text="VIEW WORKSPACES" />
-        <div className="text-[21px]">
+        <div className="text-[16px] vsm:text-[21px]">
           or{" "}
           <Link href="/" className="font-[600] underline">
             Book a Tour

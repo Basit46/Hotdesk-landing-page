@@ -10,10 +10,10 @@
     @apply text-black font-[600] text-[16px] font-open-sauce-one hover:opacity-50 duration-200;
   }
   .hero-text span {
-    @apply w-fit h-fit border-black border-[4px] bg-white font-unbounded text-[35px] xmd:text-[60px] xl:text-[84px] font-[500] tracking-[-1.68px] leading-[48px] xmd:leading-[84px] p-[6px] xmd:p-[12px];
+    @apply w-fit h-fit border-black border-[4px] bg-white font-unbounded text-[21px] vsm:text-[35px] xmd:text-[60px] xl:text-[84px] font-[500] tracking-[-1.68px] leading-[48px] xmd:leading-[84px] p-[6px] xmd:p-[12px];
   }
   .slide ul li {
-    @apply text-[48px] uppercase font-[500] w-fit whitespace-nowrap;
+    @apply text-[24px] vsm:text-[48px] uppercase font-[500] w-fit whitespace-nowrap;
   }
   .services span {
     @apply border-[3px] border-black rounded-[200px] overflow-hidden;
@@ -32,7 +32,7 @@
     @apply w-full px-[24px] py-[8px] h-[68px]  focus:outline-[0.50px] focus:outline-black;
   }
   footer span {
-    @apply w-fit h-fit border-white border-[4px] p-[8px] xmd:p-[12px] uppercase font-unbounded text-[30px] xmd:text-[48px] xl:text-[60px] font-[500] leading-[60px];
+    @apply w-fit h-fit border-white border-[4px] p-[8px] xmd:p-[12px] uppercase font-unbounded text-[21px] vsm:text-[30px] xmd:text-[48px] xl:text-[60px] font-[500] leading-[25.2px] vsm:leading-[60px];
   }
   footer .links-wrapper h3 {
     @apply font-unbounded text-[18px] xmd:text-[21px] font-bold;

@@ -25,7 +25,9 @@ const ImgBox = ({ img, rounded, boxes }) => {
     <span
       ref={(e) => boxes.current.push(e)}
       className={`${rounded ? "block" : "hidden xl:block"} kfkf ${
-        rounded ? "w-[72px] h-[72px] rounded-full" : "w-[167px] h-[72px]"
+        rounded
+          ? "hidden vsm:block w-[72px] h-[72px] rounded-full"
+          : "w-[167px] h-[72px]"
       } img-box relative`}
     >
       <Image src={img} fill className="object-cover" alt="img" />
@@ -59,18 +61,18 @@ const Services = () => {
 
       {/* Content */}
       <div className="w-full h-full relative flex flex-col justify-center gap-[96px] items-center">
-        <h1 className="text-black font-unbounded text-[28px] xl:text-[48px] font-[500] text-center">
+        <h1 className="text-black font-unbounded text-[24px] vsm:text-[28px] xl:text-[48px] font-[500] text-center">
           FOR ALL HOTDESK MEMBERS
         </h1>
 
-        <div className="flex flex-col justify-center items-center gap-[18px]">
-          <div className="flex items-center justify-center gap-[10px] md:gap-[18px]">
+        <div className="flex flex-col justify-center items-center gap-[4px] vsm:gap-[18px]">
+          <div className="flex flex-col vsm:flex-row items-center justify-center gap-[4px] vsm:gap-[10px] md:gap-[18px]">
             <TextBox img="/line1-icon1.svg" text="24/7 Access" boxes={boxes} />
             <ImgBox img="/line1-img1.jpg" boxes={boxes} />
             <TextBox img="/line1-icon2.svg" text="Concierge" boxes={boxes} />
             <ImgBox img="/line1-img2.jpg" rounded boxes={boxes} />
           </div>
-          <div className="flex items-center justify-center gap-[10px] md:gap-[18px]">
+          <div className="flex flex-col vsm:flex-row items-center justify-center gap-[4px] vsm:gap-[10px] md:gap-[18px]">
             <ImgBox img="/line2-img1.jpg" boxes={boxes} />
             <TextBox img="/line2-icon1.svg" text="Snack Bar" boxes={boxes} />
             <ImgBox img="/line2-img2.jpg" rounded boxes={boxes} />
@@ -80,7 +82,7 @@ const Services = () => {
               boxes={boxes}
             />
           </div>
-          <div className="flex items-center justify-center gap-[10px] md:gap-[18px]">
+          <div className="flex flex-col vsm:flex-row items-center justify-center gap-[4px] vsm:gap-[10px] md:gap-[18px]">
             <TextBox img="/line3-icon1.svg" text="Studios" boxes={boxes} />
             <ImgBox img="/line3-img1.jpg" rounded boxes={boxes} />
             <TextBox
@@ -93,7 +95,7 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col items-center gap-[48px]">
-          <p className="w-[70%] text-[21px] xl:text-[36px] font-open-sauce-one text-center">
+          <p className="w-[90%] vsm:w-[70%] text-[18px] vsm:text-[21px] xl:text-[36px] font-open-sauce-one text-center">
             That’s just the beginning, see the entire range of Hotdesk
             membership amenities.
           </p>

@@ -80,7 +80,7 @@ const Partners = () => {
           alt="partner logo"
         />
       </div>
-      <h2 className="font-open-sauce-one text-[21px] xmd:text-[28px] xl:text-[36px] text-center">
+      <h2 className="font-open-sauce-one text-[18px] vsm:text-[21px] xmd:text-[28px] xl:text-[36px] text-center">
         They choose Hotdesk to get their best work done.
       </h2>
     </section>

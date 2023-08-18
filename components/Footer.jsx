@@ -25,7 +25,10 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer ref={footer} className="bg-black text-white px-[24px]">
+    <footer
+      ref={footer}
+      className="bg-black text-white px-[12px] vsm:px-[24px]"
+    >
       <div className="py-[100px] border-b-[1px] border-opacity-[0.25] border-white flex flex-col xl:flex-row items-start px-[30px] gap-[50px] xl:gap-[200px]">
         <Image src="/logo-white.svg" width="212" height="29" alt="logo" />
         <div className="flex flex-col gap-[12px]">
@@ -44,8 +47,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="links-wrapper pt-[100px] pb-[50px] flex flex-wrap gap-[60px] md:gap-[50px] xmd:gap-[250px]">
-        <div className="flex flex-col gap-[48px]">
+      <div className="links-wrapper pt-[100px] pb-[50px] flex flex-col vsm:flex-row flex-wrap gap-[60px] md:gap-[50px] xmd:gap-[250px]">
+        <div className="flex flex-col gap-[24px] vsm:gap-[48px]">
           <h3>CONTACT</h3>
           <p className="font-open-sauce-one text-[18px] xmd:text-[21px] leading-[29.4px]">
             1091 York Street <br /> Prahran <br /> Victoria, 3141
@@ -62,7 +65,7 @@ const Footer = () => {
         </div>
 
         <ul className="">
-          <h3 className="mb-[48px]">NAVIGATE</h3>
+          <h3 className="mb-[24px] vsm:mb-[48px]">NAVIGATE</h3>
           <li>Locations</li>
           <li>Memberships</li>
           <li>Facilities</li>
@@ -74,7 +77,7 @@ const Footer = () => {
         </ul>
 
         <ul>
-          <h3 className="mb-[48px]">TEMPLATE</h3>
+          <h3 className="mb-[24px] vsm:mb-[48px]">TEMPLATE</h3>
           <li>Style Guide</li>
           <li>Getting Started</li>
           <li>Changelog</li>

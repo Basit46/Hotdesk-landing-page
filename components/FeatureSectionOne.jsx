@@ -28,7 +28,7 @@ const FeatureSectionOne = () => {
       ref={sectionRef}
       className="min-h-[880px] w-full flex flex-col xl:flex-row"
     >
-      <div className="w-full xl:w-[50%] h-[80vh] xl:h-[880px] py-[48px] px-[72px] flex flex-col justify-between">
+      <div className="w-full xl:w-[50%] h-[80vh] xl:h-[880px] py-[54px] vsm:py-[48px] px-[24px] vsm:px-[72px] flex flex-col justify-between">
         <p className="font-unbounded text-[21px] font-bold">HOTDESK YOUR WAY</p>
         <h1 className="font-unbounded text-[36px] leading-[39.6px] xl:leading-normal xl:text-[48px] font-[500]">
           SILENT OR BUZZING. SPACES FOR EVERY VIBE.
@@ -43,7 +43,7 @@ const FeatureSectionOne = () => {
         </div>
       </div>
 
-      <div className="relative w-full xl:w-[50%] h-[80vh] xl:h-[880px] overflow-hidden grid place-items-center">
+      <div className="relative w-full xl:w-[50%] h-fit vsm:h-[80vh] xl:h-[880px] overflow-hidden grid place-items-center">
         <div className="absolute top-0 right-0 h-[683px] w-[683px] bg-[#9492f0] rounded-[1200px] blur-[149.995px] translate-x-[25%] -translate-y-[50%]" />
         <div className="absolute bottom-0 right-0 h-[683px] w-[683px] bg-[#92f0ce] rounded-[1200px] blur-[149.995px]  translate-y-[50%]" />
         <div
