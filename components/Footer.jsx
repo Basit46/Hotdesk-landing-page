@@ -25,11 +25,8 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer
-      ref={footer}
-      className="bg-black text-white px-[12px] vsm:px-[24px]"
-    >
-      <div className="py-[100px] border-b-[1px] border-opacity-[0.25] border-white flex flex-col xl:flex-row items-start px-[30px] gap-[50px] xl:gap-[200px]">
+    <footer ref={footer} className="bg-black text-white px-[24px]">
+      <div className="py-[100px] border-b-[1px] border-opacity-[0.25] border-white flex flex-col xl:flex-row items-start px-0 vsm:px-[30px] gap-[50px] xl:gap-[200px]">
         <Image src="/logo-white.svg" width="212" height="29" alt="logo" />
         <div className="flex flex-col gap-[12px]">
           <div className="flex gap-[12px]">

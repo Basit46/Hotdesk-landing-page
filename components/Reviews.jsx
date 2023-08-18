@@ -43,21 +43,21 @@ const Reviews = () => {
   ];
 
   return (
-    <section className="w-full h-[855.77px] overflow-hidden pt-[100px]">
-      <Slider {...settings} className="">
+    <section className="w-full min-h-[855.77px] overflow-hidden py-[80px]">
+      <div className="w-fit flex flex-col items-center gap-[50px]">
         {reviewsList.map((review) => (
           <div
             key={review.id}
-            className="w-[80%] relative h-[506.77px] border-black border-[4px] flex justify-start items-center"
+            className="w-[90%] relative h-fit xl:h-[506.77px] border-black border-[4px] flex flex-col xl:flex-row justify-start items-center"
           >
-            <div className="w-[65%] h-full border-r-[4px] border-black p-[36px] flex flex-col justify-between">
+            <div className="w-full xl:w-[65%] h-full border-b-[4px] xl:border-b-0 xl:border-r-[4px] border-black p-[36px] flex gap-[20px] xl:gap-0 flex-col justify-between">
               <Image
                 src={review.logo}
                 width="198"
                 height="39"
                 alt="partner logo"
               />
-              <p className="text-[36px] font-open-sauce-one leading-[46.8px]">
+              <p className="text-[21px] xl:text-[36px] font-open-sauce-one leading-[27.3px] vsm:leading-[46.8px]">
                 {review.text}
               </p>
               <div>
@@ -67,19 +67,19 @@ const Reviews = () => {
                 <p className="font-open-sauce-one">{review.role}</p>
               </div>
             </div>
-            <div className="w-[35%] h-full">
-              <div className="border-[4px] bg-black border-black">
+            <div className="w-full xl:w-[35%] h-full flex justify-center items-center p-[30px] xl:p-0">
+              <div className="relative border-[4px] border-black h-[200px] vsm:h-[394px] w-[200px] vsm:w-[394px] rounded-full overflow-hidden">
                 <Image
                   src={review.img}
-                  height={394}
-                  width={394}
-                  alt="Reviewer object-contain"
+                  fill
+                  className="object-cover rounded-full"
+                  alt="Reviewer"
                 />
               </div>
             </div>
           </div>
         ))}
-      </Slider>
+      </div>
     </section>
   );
 };

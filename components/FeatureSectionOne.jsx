@@ -43,7 +43,7 @@ const FeatureSectionOne = () => {
         </div>
       </div>
 
-      <div className="relative w-full xl:w-[50%] h-fit vsm:h-[80vh] xl:h-[880px] overflow-hidden grid place-items-center">
+      <div className="relative w-full xl:w-[50%] py-[40px] vsm:py-0 h-fit vsm:h-[80vh] xl:h-[880px] overflow-hidden grid place-items-center">
         <div className="absolute top-0 right-0 h-[683px] w-[683px] bg-[#9492f0] rounded-[1200px] blur-[149.995px] translate-x-[25%] -translate-y-[50%]" />
         <div className="absolute bottom-0 right-0 h-[683px] w-[683px] bg-[#92f0ce] rounded-[1200px] blur-[149.995px]  translate-y-[50%]" />
         <div
