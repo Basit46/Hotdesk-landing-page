@@ -15,6 +15,10 @@ module.exports = {
         partnersbg: "linear-gradient(180deg, #222, #000)",
         bg2: "linear-gradient(180deg, #000, #222);",
       },
+      screens: {
+        vsm: "400px",
+        xmd: "800px",
+      },
     },
   },
   plugins: [],

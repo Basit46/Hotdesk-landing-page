@@ -10,7 +10,7 @@
     @apply text-black font-[600] text-[16px] font-open-sauce-one hover:opacity-50 duration-200;
   }
   .hero-text span {
-    @apply border-black border-[4px] bg-white font-unbounded text-[84px] font-[500] tracking-[-1.68px] leading-[84px] p-[12px];
+    @apply w-fit h-fit border-black border-[4px] bg-white font-unbounded text-[35px] xmd:text-[60px] xl:text-[84px] font-[500] tracking-[-1.68px] leading-[48px] xmd:leading-[84px] p-[6px] xmd:p-[12px];
   }
   .slide ul li {
     @apply text-[48px] uppercase font-[500] w-fit whitespace-nowrap;
@@ -19,10 +19,10 @@
     @apply border-[3px] border-black rounded-[200px] overflow-hidden;
   }
   .services .text-box {
-    @apply bg-white text-black py-[9px] pl-[18px] pr-[48px] flex gap-[12px];
+    @apply bg-white text-black py-[9px] pl-[12px] xmd:pl-[18px] pr-[20px] xmd:pr-[30px] flex gap-[12px] items-center;
   }
   .services .text-box p {
-    @apply font-[600] font-open-sauce-one text-[36px];
+    @apply font-[600] font-open-sauce-one text-[16px] xl:text-[36px];
   }
   form label {
     @apply block font-unbounded text-[12px] uppercase font-bold tracking-[0.12px] mb-[18px];

@@ -24,14 +24,17 @@ const FeatureSectionOne = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="h-[880px] w-full flex ">
-      <div className="w-[50%] h-full py-[48px] px-[72px] flex flex-col justify-between">
+    <section
+      ref={sectionRef}
+      className="min-h-[880px] w-full flex flex-col xl:flex-row"
+    >
+      <div className="w-full xl:w-[50%] h-[80vh] xl:h-full py-[48px] px-[72px] flex flex-col justify-between">
         <p className="font-unbounded text-[21px] font-bold">HOTDESK YOUR WAY</p>
-        <h1 className="font-unbounded text-[48px] font-[500]">
+        <h1 className="font-unbounded text-[36px] leading-[39.6px] xl:leading-normal xl:text-[48px] font-[500]">
           SILENT OR BUZZING. SPACES FOR EVERY VIBE.
         </h1>
         <div>
-          <p className="font-open-sauce-one text-[21px] mb-[48px]">
+          <p className="font-open-sauce-one text-[18px] xl:text-[21px] mb-[48px]">
             At Hotdesk, we have spaces for everyone to do their best work –
             whether that’s amongst buzzing activity or tucked away in a cozy
             nook.
@@ -40,7 +43,7 @@ const FeatureSectionOne = () => {
         </div>
       </div>
 
-      <div className="relative w-[50%] h-full overflow-hidden grid place-items-center">
+      <div className="relative w-full xl:w-[50%] h-[100vh] xl:h-full overflow-hidden grid place-items-center">
         <div className="absolute top-0 right-0 h-[683px] w-[683px] bg-[#9492f0] rounded-[1200px] blur-[149.995px] translate-x-[25%] -translate-y-[50%]" />
         <div className="absolute bottom-0 right-0 h-[683px] w-[683px] bg-[#92f0ce] rounded-[1200px] blur-[149.995px]  translate-y-[50%]" />
         <div

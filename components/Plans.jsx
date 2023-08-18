@@ -42,33 +42,33 @@ const Plans = () => {
   return (
     <div
       ref={plansRef}
-      className="w-full md:h-[961.97px] bg-black text-white flex flex-col justify-center gap-[120px]"
+      className="w-full min-h-[961.97px] py-[50px] xl:py-0 bg-black text-white flex flex-col justify-center gap-[120px]"
     >
-      <h1 className="font-[500] font-unbounded text-[60px] text-center px-[101px] leading-[66px]">
+      <h1 className="font-[500] font-unbounded text-[36px] xmd:text-[48px] xl:text-[60px] text-center px-[20px] xl:px-[101px] leading-[66px]">
         ON-DEMAND OPTIONS FOR TEAMS OF{" "}
         <span className="relative">
           <Image
             src="/line.svg"
             width={418}
             height={89}
-            className="absolute left-[-5px] top-[3px]"
+            className="hidden xl:hidden absolute left-[-5px] top-[3px]"
             alt="line svg"
           />
           <span className="relative">ALL SIZES.</span>
         </span>
       </h1>
 
-      <div className="flex justify-around">
+      <div className="flex flex-col xl:flex-row gap-[40px] xl:gap-0 items-center justify-start xl:justify-around">
         {plansList.map((plan) => (
           <div
             ref={(e) => plansBoxes.current.push(e)}
             key={plan.id}
-            className="w-[608px] h-[417.969px] border-white border-[2px] flex flex-col"
+            className="w-[85%] xmd:w-[608px] min-h-[417.969px] border-white border-[2px] flex flex-col"
           >
             <h1 className="h-[102.8px] p-[24px] text-[48px] font-[500] font-unbounded flex items-center">
               {plan.title}
             </h1>
-            <p className="border-y-[2px] border-white h-[108.78px] p-[24px] text-[21px] font-open-sauce-one">
+            <p className="border-y-[2px] border-white h-[130px] xmd:h-[108.78px] p-[24px] text-[21px] font-open-sauce-one">
               {plan.desc}
             </p>
             <div className="h-[90.39px] px-[24px] border-b-[2px] border-white flex gap-[24px] items-center">

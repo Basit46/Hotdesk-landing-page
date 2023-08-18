@@ -47,7 +47,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <h1 className="font-open-sauce-one text-center text-[36px] tracking-[-0.36px] font-[600]">
+        <h1 className="font-open-sauce-one text-center text-[21px] xmd:text-[28px] xl:text-[36px] tracking-[-0.36px] font-[600]">
           New creative co-working spaces opening in 2023.
         </h1>
       </section>

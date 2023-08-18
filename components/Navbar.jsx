@@ -9,7 +9,7 @@ const Navbar = () => {
       <Link href="/">
         <Image src="/logo.svg" width="159" height="21" alt="Hotdesk logo" />
       </Link>
-      <nav className="flex-1 flex gap-[36px]">
+      <nav className="flex-1 hidden xmd:flex gap-[36px]">
         <Link href="/">Membership</Link>
         <Link href="/">Locations</Link>
         <Link href="/">Facilities</Link>
