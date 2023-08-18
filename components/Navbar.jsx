@@ -10,7 +10,7 @@ import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="z-[20] w-full h-[92px] px-[26.5px] flex items-center justify-between xl:justify-start xl:gap-[72px]">
+    <header className="z-[20] w-full bg-[red] h-[92px] px-[26.5px] flex items-center justify-between xl:justify-start xl:gap-[72px]">
       <Link href="/">
         <Image src="/logo.svg" width="159" height="21" alt="Hotdesk logo" />
       </Link>
