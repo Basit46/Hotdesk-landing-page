@@ -1,20 +1,45 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useRef, useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+  const footerHeaderTexts = useRef([]);
+  const footer = useRef();
+
+  useEffect(() => {
+    gsap.from(footerHeaderTexts.current, {
+      scale: 0.6,
+      duration: 0.5,
+      stagger: 0.05,
+      scrollTrigger: {
+        trigger: footer.current,
+        start: "top 90%",
+      },
+    });
+  }, []);
+
   return (
-    <footer className="bg-black text-white px-[24px]">
+    <footer ref={footer} className="bg-black text-white px-[24px]">
       <div className="py-[100px] border-b-[1px] border-opacity-[0.25] border-white flex items-start px-[30px] gap-[200px]">
         <Image src="/logo-white.svg" width="212" height="29" alt="logo" />
         <div className="flex flex-col gap-[12px]">
           <div className="flex gap-[12px]">
-            <span>Workspace</span>
-            <span>for</span>
+            <span ref={(e) => footerHeaderTexts.current.push(e)}>
+              Workspace
+            </span>
+            <span ref={(e) => footerHeaderTexts.current.push(e)}>for</span>
           </div>
           <div className="flex gap-[12px]">
-            <span>your</span>
-            <span>next move.</span>
+            <span ref={(e) => footerHeaderTexts.current.push(e)}>your</span>
+            <span ref={(e) => footerHeaderTexts.current.push(e)}>
+              next move.
+            </span>
           </div>
         </div>
       </div>
