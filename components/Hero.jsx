@@ -16,7 +16,7 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className="relative w-full h-[471.14px] vsm:h-screen md:h-[980px] font-open-sauce-one">
+    <section className="mt-[80px] relative w-full h-[471.14px] vsm:h-screen md:h-[980px] font-open-sauce-one">
       {/* Hero Background: Gradients + Image */}
       <div className="w-full h-full flex">
         <div className="relative w-full xl:w-[50%] h-full overflow-hidden">

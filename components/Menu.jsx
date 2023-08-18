@@ -4,7 +4,7 @@ const Menu = ({ isOpen, setIsOpen }) => {
   return (
     <nav
       className={`${
-        isOpen ? "h-[300px]" : "h-0 p-0"
+        isOpen ? " top-[90px]" : "top-[-300px]"
       } overflow-hidden duration-200 xl:hidden fixed z-[10] top-[90px] left-[50%] translate-x-[-50%] w-[90vw] flex flex-col p-[12px] bg-white gap-[20px]`}
     >
       <Link onClick={() => setIsOpen(false)} href="/">
