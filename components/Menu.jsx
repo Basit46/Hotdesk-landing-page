@@ -5,7 +5,7 @@ const Menu = ({ isOpen, setIsOpen }) => {
     <nav
       className={`${
         isOpen ? "top-[90px]" : "top-[-100vh]"
-      } overflow-hidden duration-500 xl:hidden fixed z-[10] top-[90px] left-[50%] translate-x-[-50%] w-[90vw] flex flex-col p-[12px] bg-white gap-[20px]`}
+      } overflow-hidden duration-500 xl:hidden fixed z-[10] left-[50%] translate-x-[-50%] w-[90vw] flex flex-col p-[12px] bg-white gap-[20px]`}
     >
       <Link onClick={() => setIsOpen(false)} href="/">
         Membership
