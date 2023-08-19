@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  position: relative;
+}
+
 @layer components {
   nav a {
     @apply text-black font-[600] text-[16px] font-open-sauce-one hover:opacity-50 duration-200;
