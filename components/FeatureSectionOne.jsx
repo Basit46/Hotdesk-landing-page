@@ -48,7 +48,7 @@ const FeatureSectionOne = () => {
         <div className="absolute bottom-0 right-0 h-[683px] w-[683px] bg-[#92f0ce] rounded-[1200px] blur-[149.995px]  translate-y-[50%]" />
         <div
           ref={imgContRef}
-          className="relative z-[2] h-[394px] xmd:h-[511px] w-[394px] xmd:w-[511px] rounded-full border-[4px] border-black overflow-hidden"
+          className="relative z-[2] h-[300px] vsm:h-[394px] xmd:h-[511px] w-[300px] vsm:w-[394px] xmd:w-[511px] rounded-full border-[4px] border-black overflow-hidden"
         >
           <Image
             src="/featuresImg1.jpg"

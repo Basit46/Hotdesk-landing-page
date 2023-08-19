@@ -22,9 +22,9 @@ export default function Home() {
       <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
       <Navbar setIsOpen={setIsOpen} />
       <Hero />
-      <section className="slide-cont w-full h-[283px] vsm:h-[507.59px] bg-black text-white flex flex-col justify-center gap-[40px] vsm:gap-[120px]">
+      <section className="showcase-slide-cont w-full h-[283px] vsm:h-[507.59px] bg-black text-white flex flex-col justify-center gap-[40px] vsm:gap-[120px]">
         <div className="relative w-full overflow-x-hidden">
-          <div className="slide w-fit px-[96px] flex items-center gap-[48px]">
+          <div className="showcase-slide w-fit px-[96px] flex items-center gap-[48px]">
             <ul className="relative w-fit flex gap-[96px] items-center font-unbounded">
               <li>hawthorn</li>
               <li>richmond</li>

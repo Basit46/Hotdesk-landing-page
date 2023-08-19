@@ -12,7 +12,7 @@
   .hero-text span {
     @apply w-fit h-fit border-black border-[4px] bg-white font-unbounded text-[21px] vsm:text-[35px] xmd:text-[60px] xl:text-[84px] font-[500] tracking-[-1.68px] leading-[48px] xmd:leading-[84px] p-[6px] xmd:p-[12px];
   }
-  .slide ul li {
+  .showcase-slide ul li {
     @apply text-[24px] vsm:text-[48px] uppercase font-[500] w-fit whitespace-nowrap;
   }
   .services span {
@@ -42,7 +42,7 @@
   }
 }
 
-.slide {
+.showcase-slide {
   animation: slideLeft 35s infinite linear;
 }
 @keyframes slideLeft {
@@ -50,7 +50,7 @@
     transform: translateX(-50%);
   }
 }
-.slide-cont > div::before {
+.showcase-slide-cont > div::before {
   content: "";
   position: absolute;
   top: 0;
@@ -68,7 +68,10 @@
   z-index: 2;
 }
 
-.slint {
-  display: flex;
-  width: 70%;
+.slick-slide > div > div > div {
+  width: 95vw;
+  margin: 0 auto;
+}
+.slick-slider ul li button::before {
+  font-size: 14px;
 }
