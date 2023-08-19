@@ -1,20 +1,26 @@
+"use client";
+
 import Contact from "@/components/Contact";
 import CustomButton from "@/components/CustomButton";
 import FeatureSectionTwo from "@/components/FeatureSection2";
 import FeatureSectionOne from "@/components/FeatureSectionOne";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import Menu from "@/components/Menu";
 import Navbar from "@/components/Navbar";
 import Partners from "@/components/Partners";
 import Plans from "@/components/Plans";
 import Reviews from "@/components/Reviews";
 import Services from "@/components/Services";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <main>
-      <Navbar />
+      <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Navbar setIsOpen={setIsOpen} />
       <Hero />
       <section className="slide-cont w-full h-[283px] vsm:h-[507.59px] bg-black text-white flex flex-col justify-center gap-[40px] vsm:gap-[120px]">
         <div className="relative w-full overflow-x-hidden">
