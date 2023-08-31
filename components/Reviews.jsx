@@ -48,7 +48,7 @@ const Reviews = () => {
     <section className="w-full h-fit py-[144px] overflow-hidden">
       <Slider {...settings} className="flex">
         {reviewsList.map((review) => (
-          <div>
+          <div key={review.id}>
             <div
               key={review.id}
               className="w-[90%] relative h-fit xl:h-[506.77px] vsm:border-black vsm:border-[4px] flex flex-col xl:flex-row justify-start items-center"
